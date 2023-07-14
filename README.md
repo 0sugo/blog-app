@@ -12,6 +12,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Tests](#tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -39,6 +40,8 @@
 
 - **[Rails_db_migrations]**
 - **[Rubocop]**
+- **[passing_tests]**
+- **[model_Validations]**
 
 
 <!-- GETTING STARTED -->
@@ -78,6 +81,12 @@ To check on db migrations of the project execute the following command in the te
 rails db:migrate:status
 ```
 
+### Tests
+
+To check tests run the following command in the terminal
+```sh
+rspec spec
+```
 ## 👥 Authors <a name="authors"></a>
 
 👤 **JOSECK OSUGO**
@@ -93,7 +102,6 @@ rails db:migrate:status
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] [Add_a_graphical_user_interface]
-- [ ] [Add_tests]
 
 <!-- CONTRIBUTING -->
 
