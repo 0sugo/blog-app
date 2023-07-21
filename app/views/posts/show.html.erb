@@ -1,1 +1,22 @@
-<h1>Welcome to show all posts page</h1>
+<div class="post-details">
+    <div class="post-info">
+      <h2 class="post-title"><%= @post.title %></h2>
+      <p class="post-likes">Likes: <%= @post.likes_counter %></p>
+      <p class="post-comments">Comments: <%= @post.comments_counter %></p>
+      <p class="post-text"><%= @post.text %></p>
+    </div>
+  </div>
+  <div class="comments-section">
+    <h3 class="comments-heading">Comments:</h3>
+    <ul class="comments-list">
+      <% @post.comments.each do |comment| %>
+        <li>
+          <span class="comment-author"><%= comment.author.name %></span>
+          : <%= comment.text %>
+        </li>
+      <% end %>
+    </ul>
+    <div class="back-button">
+      <%= link_to 'Back to Posts', user_posts_path(@post.author) %>
+    </div>
+  </div>
