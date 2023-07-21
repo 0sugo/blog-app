@@ -1,1 +1,30 @@
-<h1>Welcome to individuals index in posts page</h1>
+<div class="user-posts">
+    <h1 class="user-header">
+      <%= image_tag(@user.photo) %>
+      <%= @user.name %>
+    </h1>
+    <% @all_posts.each do |post| %>
+      <div class="post-card">
+        <%= link_to user_post_path(@user, post) do %>
+          <h2 class="post-title"><%= post.title %></h2>
+          <p class="post-text"><%= post.text %></p>
+          <p class="post-likes">Likes: <%= post.likes_counter %></p>
+          <p class="post-comments">Comments: <%= post.comments_counter %></p>
+          <h3 class="comments-heading">Comments:</h3>
+          <ul class="comments-list">
+            <% post.comments.each do |comment| %>
+              <li>
+                <%= comment.author.name %> : <%= comment.text %>
+              </li>
+            <% end %>
+          </ul>
+        <% end %>
+      </div>
+    <% end %>
+    <button class="pagination-button">
+      <%= link_to 'Pagination', user_posts_path(@user) %>
+    </button>
+    <div class="back-button">
+      <%= link_to 'Back to User', user_path(@user) %>
+    </div>
+  </div>
