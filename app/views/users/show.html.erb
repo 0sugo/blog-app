@@ -14,7 +14,7 @@
     <% @individual_post.most_recent_posts.each do |post| %>
       <div class="post-card">
         <h3 class="post-heading"><%= post.title %></h3>
-        <p class="post-text"><%= post.text %></p>
+        <p class="post-text"><%= truncate(post.text, length: 11, omission: '...') %></p>
         <p class="post-comments">Comments: <%= post.comments_counter %></p>
         <p class="post-likes">Likes: <%= post.likes_counter %></p>
       </div>
