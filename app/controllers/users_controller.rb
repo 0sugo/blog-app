@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
-  def index; end
+  def index
+    @users = User.all
+  end
 
-  def show; end
+  def show
+    @individual_post = User.find(params[:id])
+    @posts = Post.where(author_id: params[:id])
+  end
 end

@@ -1,2 +1,6 @@
-<h1>Welcome to index page</h1>
-
+<h1 class="styled-heading">All Users</h1>
+<div class="all-users">
+  <ul>
+    <%=render partial: 'user',collection:@users %>
+  </ul>
+</div>
