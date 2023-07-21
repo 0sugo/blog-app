@@ -1,0 +1,113 @@
+.styled-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.all-users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.individual-user {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #3f51b5;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+  margin-left: 15px;
+}
+
+.particulars {
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  font-size: 14px;
+  color: #777;
+}
+
+.post-details {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #3f51b5;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-counter {
+  font-size: 14px;
+  color: #777;
+}
+
+.post-bio h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-bio p {
+  font-size: 16px;
+  color: #666;
+}
+
+.individual-post {
+  margin-bottom: 20px;
+}
+
+.post-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-text {
+  font-size: 16px;
+  color: #666;
+}
+
+.post-comments,
+.post-likes {
+  font-size: 14px;
+  color: #777;
+}
