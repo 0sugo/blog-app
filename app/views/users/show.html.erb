@@ -1,1 +1,32 @@
-<h1>Welcome to show all users</h1>
+<div class="post-details">
+    <div class="post-header">
+      <span class="post-image">
+        <%= image_tag(@individual_post.photo) %>
+      </span>
+      <h1 class="post-title"><%= @individual_post.name %></h1>
+      <p class="post-counter">Number of posts: <%= @individual_post.posts_counter %></p>
+    </div>
+    <div class="post-bio">
+      <h3>Bio</h3>
+      <p><%= @individual_post.bio %></p>
+    </div>
+    <div class="post-list">
+      <% @posts.each do |post| %>
+      <%= link_to user_posts_path(@individual_post) do %>
+
+          <div class="post-card">
+            <h3 class="post-heading"><%= post.title %></h3>
+            <p class="post-text"><%= post.text %></p>
+            <p class="post-comments">Comments: <%= post.comments_counter %></p>
+            <p class="post-likes">Likes: <%= post.likes_counter %></p>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+    <button class="see-all-button">
+      <%= link_to 'See All', user_posts_path(@individual_post) %>
+    </button>
+    <div class="back-button">
+      <%= link_to 'Back to Users', users_path %>
+    </div>
+  </div>
