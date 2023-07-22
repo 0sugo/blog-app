@@ -49,10 +49,18 @@
 
 .post-details {
   max-width: 600px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
 }
 
 .post-header {
