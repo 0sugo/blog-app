@@ -1,12 +1,12 @@
 <%= form_with(model: post, url: user_posts_path(@post&.author), method: :post, class: "form-container") do |form| %>
-  <div>
+  <div class="form-field">
     <%= form.label :title, class: "form-label" %>
-    <%= form.text_field :title, class: "form-field" %>
+    <%= form.text_field :title, class: "form-input" %>
   </div>
 
-  <div>
+  <div class="form-field">
     <%= form.label :text, class: "form-label" %>
-    <%= form.text_area :text, class: "form-field" %>
+    <%= form.text_area :text, class: "form-textarea" %>
   </div>
 
   <%= form.submit 'Create Post', class: "form-submit-button" %>
