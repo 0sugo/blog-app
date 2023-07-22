@@ -20,6 +20,11 @@
       </div>
     <% end %>
   </div>
+
+  <div>
+    <%= link_to 'Add Post', new_user_post_path(@individual_post), class: "add-post-button" %>
+  </div>
+
   <button class="see-all-button">
     <%= link_to 'See All', user_posts_path(@individual_post) %>
   </button>
