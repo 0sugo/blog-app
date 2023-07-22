@@ -20,6 +20,9 @@
       </div>
     <% end %>
   </div>
+  <div>
+  <%= render 'posts/form', post: @post%>
+  </div>
   <button class="see-all-button">
     <%= link_to 'See All', user_posts_path(@individual_post) %>
   </button>
