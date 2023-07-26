@@ -21,9 +21,9 @@
       <% end %>
     </div>
   <% end %>
-  <button class="pagination-button">
-    <%= link_to 'Pagination', user_posts_path(@user) %>
-  </button>
+  <div class="pagination-button">
+    <%= will_paginate @all_posts %>
+  </div>
   <div class="back-button">
     <%= link_to 'Back to User', user_path(@user) %>
   </div>
