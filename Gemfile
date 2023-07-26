@@ -66,14 +66,12 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+group :development, :test do
   gem 'capybara'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
 
-group :development, :test do
-  gem 'rails-controller-testing'
-  gem 'rspec-rails'
-end
+gem 'will_paginate'
