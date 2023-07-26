@@ -95,7 +95,10 @@ rspec spec
 - Twitter: [@0sugo5](https://twitter.com/osugo5)
 - LinkedIn: [Joseck Osugo](https://www.linkedin.com/in/joseck-osugo/)
 
+👤 **STEPHEN KATULI**
 
+- GitHub: [@githubhandle](https://github.com/stephenkati)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephen-katuli/)
 
 <!-- FUTURE FEATURES -->
 

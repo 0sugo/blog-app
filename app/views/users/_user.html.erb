@@ -1,5 +1,9 @@
 <li class='individual-user'>
-  <span class='user-image'><%= link_to(image_tag(user.photo), user_path(user)) %></span>
+  <% if user.photo.present? %>
+    <span class='user-image'><%= image_tag user.photo %></span>
+  <% else %>
+    <span class='user-image'><%= image_tag 'https://rb.gy/h3s8k' %></span>
+  <% end %>
   <span class='user-name'><%= link_to user.name, user %></span>
   <span class='particulars'>Number of posts: <%= user.posts_counter %></span>
 </li>
