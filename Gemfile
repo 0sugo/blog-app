@@ -74,6 +74,6 @@ group :development, :test do
   gem 'webdrivers'
 end
 
-gem 'will_paginate'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'letter_opener'
+gem 'will_paginate'
