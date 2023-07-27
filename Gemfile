@@ -75,3 +75,4 @@ group :development, :test do
 end
 
 gem 'will_paginate'
+gem 'letter_opener'
